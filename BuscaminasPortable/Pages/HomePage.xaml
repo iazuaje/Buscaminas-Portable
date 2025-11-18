@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
- xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
- xmlns:pageModels="clr-namespace:BuscaminasPortable.PageModels"
- x:Class="BuscaminasPortable.Pages.HomePage"
- x:DataType="pageModels:HomePageModel"
- Title="{Binding Title}">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pageModels="clr-namespace:BuscaminasPortable.PageModels"
+             x:Class="BuscaminasPortable.Pages.HomePage"
+             x:DataType="pageModels:HomePageModel"
+             Title="{Binding Title}">
     <Grid>
-        
         <Grid RowDefinitions="2*, 1*, auto"
           Padding="20"
-          >
-
+         >
             <!-- Sección superior -->
             <VerticalStackLayout Grid.Row="0"
                              Spacing="20"
