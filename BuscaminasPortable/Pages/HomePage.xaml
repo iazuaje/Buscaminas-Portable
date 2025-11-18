@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+ xmlns:pageModels="clr-namespace:BuscaminasPortable.PageModels"
+ x:Class="BuscaminasPortable.Pages.HomePage"
+ x:DataType="pageModels:HomePageModel"
+ Title="{Binding Title}">
+    <Grid>
+        
+        <Grid RowDefinitions="2*, 1*, auto"
+          Padding="20"
+          >
+
+            <!-- Sección superior -->
+            <VerticalStackLayout Grid.Row="0"
+                             Spacing="20"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center">
+
+                <Image Source="bomb.png"
+                   WidthRequest="180"
+                   HeightRequest="180"
+                   Aspect="AspectFit" />
+
+                <Label Text="Buscaminas"
+                   Style="{StaticResource Title1}"
+                   FontSize="40"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+
+            <!-- Sección inferior -->
+            <VerticalStackLayout Grid.Row="1"
+                             Spacing="15"
+                             VerticalOptions="Center">
+
+                <Button Text="Continuar"
+                    FontSize="20"
+                    CornerRadius="10"
+                    HeightRequest="55" />
+
+                <Button Text="Nuevo Juego"
+                    FontSize="20"
+                    CornerRadius="10"
+                    HeightRequest="55"/>
+            </VerticalStackLayout>
+
+            <!-- Footer -->
+            <StackLayout Grid.Row="2"
+                     Padding="0,5"
+                     HorizontalOptions="Center"
+                     VerticalOptions="End">
+
+                <Label Text="v0.0.1a ©2025 Todos los derechos reservados"
+                   Style="{StaticResource Caption2}"
+                   HorizontalTextAlignment="Center"/>
+                <Label Text="AI - Azuaje Iván"
+                   Style="{StaticResource Caption2}"
+                   HorizontalTextAlignment="Center"/>
+                <Label Text="(Not Actually AI)"
+                   Style="{StaticResource Caption3}"
+                   HorizontalTextAlignment="Center"/>
+            </StackLayout>
+
+        </Grid>
+    </Grid>
+</ContentPage>

@@ -9,6 +9,12 @@
     Title="BuscaminasPortable">
 
     <ShellContent
+        Title="Inicio"
+        Icon="{StaticResource IconHome}"
+        ContentTemplate="{DataTemplate pages:HomePage}"
+        Route="home" />
+
+    <ShellContent
         Title="Dashboard"
         Icon="{StaticResource IconDashboard}"
         ContentTemplate="{DataTemplate pages:MainPage}"
